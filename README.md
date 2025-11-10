@@ -1,11 +1,12 @@
+
 Beyond the Chart – Quantitative & Behavioral Analysis Framework
-Edge Decay and Behavioral Integrity Assessment – Institutional Overview
+Edge Decay and Behavioral Integrity Assessment – Professional Overview
 
 Authored by Beyond the Chart Research Division
 
 1. Executive Summary
 
-This document presents an institutional-grade quantitative and behavioral assessment of a high-frequency trading strategy characterized by a 93.2% win rate and a mean risk/reward ratio of 0.39. The analysis, conducted under the proprietary Beyond the Chart Quantitative & Behavioral Framework, aims to determine the authenticity, resilience, and sustainability of the underlying trading edge over time.
+This document presents a professional-grade quantitative and behavioral assessment of a high-frequency trading strategy characterized by a 93.2% win rate and a mean risk/reward ratio of 0.39. The analysis, conducted under the proprietary Beyond the Chart Quantitative & Behavioral Framework, aims to determine the authenticity, resilience, and sustainability of the underlying trading edge over time.
 
 The study integrates traditional quantitative metrics with behavioral modeling to reveal the structural stability, operational coherence, and probabilistic decay of the strategy's performance under realistic market conditions.
 
@@ -57,7 +58,7 @@ Correlation with Volatility Regime: -0.68 → negative correlation; strategy det
 
 Edge Equilibrium Map: reveals multiple transitions between structural and behavioral dominance, consistent with adaptive but fragile algorithmic design.
 
-The data suggest a bubble-type structure—performance remains stable until stress conditions trigger exponential degradation.
+The data suggest a bubble-type structure — performance remains stable until stress conditions trigger exponential degradation.
 
 6. Professional Interpretation
 
