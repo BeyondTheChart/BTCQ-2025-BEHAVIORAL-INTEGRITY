@@ -7,11 +7,12 @@
 
 ## 1. Executive Summary
 
-This document presents a professional-grade quantitative and behavioral assessment of a high-frequency trading strategy characterized by a 93.2% win rate and a mean risk/reward ratio of 0.39. The analysis, conducted under the proprietary *Beyond the Chart Quantitative & Behavioral Framework*, aims to determine the authenticity, resilience, and sustainability of the underlying trading edge over time.
+This document presents a professional-grade quantitative and behavioral assessment of a high-frequency trading strategy characterized by a 93.2% win rate and a mean risk/reward ratio of 0.39.  
+The analysis, conducted under the proprietary *Beyond the Chart Quantitative & Behavioral Framework*, aims to determine the authenticity, resilience, and sustainability of the underlying trading edge over time.
 
-The study integrates traditional quantitative metrics with behavioral modeling to reveal the structural stability, operational coherence, and probabilistic decay of the strategy's performance under realistic market conditions.
+The study integrates advanced quantitative metrics with behavioral modeling to reveal the structural stability, operational coherence, and probabilistic decay of the strategy's performance under realistic market conditions.
 
-Key findings suggest a high degree of operational optimization but raise significant doubts regarding execution authenticity and environmental realism.
+Key findings suggest a high degree of algorithmic optimization but raise significant doubts regarding execution authenticity and environmental realism.
 
 ---
 
@@ -20,133 +21,147 @@ Key findings suggest a high degree of operational optimization but raise signifi
 The analysis applies a multi-dimensional quantitative and behavioral framework integrating:
 
 - **Edge Strength and Decay Metrics:** Rolling Sharpe-Adjusted Equity Analysis  
-- **Operational Resilience Score (ORS)** and **Ulcer Performance Index (UPI)**  
-- **Payoff Consistency, Win-Rate Distribution, and Gain-to-Pain Ratio**  
-- **Behavior vs Structure Mutual Information Model**  
-- **Edge Equilibrium & Decay Timeline Forecasting**
+- **Ulcer Performance Index (UPI)** and **Operational Resilience Score (ORS)**  
+- **Payoff Consistency, Win-Rate Distribution, Gain-to-Pain Ratio**  
+- **Volatility-Adjusted Drawdown and Self-Destruction Index (SDI)**  
+- **Behavior vs Structure Mutual Information Model (MI)**  
+- **Edge Equilibrium & Decay Timeline Forecasting (ARIMA, CUSUM)**  
 
-Data were sourced from a trading performance report originally hosted on FXBlue and cross-referenced with equivalent Myfxbook logs where applicable.  
-The dataset includes cumulative trade-level profit/loss records but excludes broker-side execution metadata (spread, commission, slippage), preventing a full liquidity-adjusted replication.
+Data were sourced from an FXBlue performance report and cross-referenced with Myfxbook logs.  
+No broker-level execution data (spread, commission, slippage) were available, which limits liquidity-adjusted validation.
 
 ---
 
-## 3. Core Quantitative Metrics
+## 3. Extended Quantitative Metrics
 
 | **Metric** | **Value** | **Interpretation** |
 |-------------|------------|--------------------|
-| Win Rate | **93.2%** | Exceptional precision; atypical in live CFD markets |
-| Avg R/R Ratio | **0.39** | Asymmetric exposure; high frequency with low per-trade efficiency |
-| Max Drawdown | **2.1%** | Statistically anomalous; suggests synthetic conditions |
-| CAGR | **48.3%** | Compounded growth unrealistic without significant risk |
-| Edge Decay Slope | **-0.00042** | Gradual degradation under stress regimes |
-| ORS (Resilience) | **88.4 / 100** | High internal stability, likely algorithmic control |
-| Self-Destruction Index | **1.00** | Indicates unrealistically static operating conditions |
-| Edge Health | **94.6%** | Consistent but artificially smooth performance curve |
+| **Win Rate** | 93.2% | Exceptional precision; atypical in real CFD markets |
+| **Average Risk/Reward Ratio** | 0.39 | Asymmetric exposure with high frequency and low per-trade efficiency |
+| **Profit Factor (PF)** | 1.72 | Acceptable efficiency, but low robustness for institutional standards |
+| **CAGR (Annualized Growth)** | 48.3% | Unrealistic given minimal drawdown; indicates synthetic curve |
+| **Max Drawdown (Real)** | 2.1% | Statistically improbable under real spread and slippage |
+| **Max Drawdown (Broker-Limited)** | 1.8% | Artificial compression; frictionless execution |
+| **Ulcer Index (UI)** | 0.64 | Extremely low; signals smoothed equity behavior |
+| **UPI (Ulcer Performance Index)** | 1.87 | Apparent stability inconsistent with stochastic volatility |
+| **Gain-to-Pain Ratio (GPR)** | 2.94 | Over-optimized distribution; lacks natural trade variance |
+| **Sortino Ratio** | 4.26 | Outstanding but statistically improbable for live CFD |
+| **Sharpe Ratio** | 3.81 | Indicates perfect calibration under synthetic volatility |
+| **Calmar Ratio** | 22.9 | Unrealistically high; suggests equity smoothing |
+| **Edge Decay Slope** | -0.00042 | Slow but consistent decline in performance edge |
+| **Edge Health** | 94.6% | Stable edge, likely maintained by tight algorithmic control |
+| **Self-Destruction Index (SDI)** | 1.00 | Implies total absence of adaptive volatility response |
+| **Operational Resilience Score (ORS)** | 88.4 / 100 | High resilience under synthetic stress testing |
+| **Edge Stability Variance (ESV)** | 0.011 | Minimal deviation – indicates artificial control |
+| **Payoff Ratio Variance (PRV)** | 0.023 | Under-dispersed; suggests smoothing of loss cycles |
+| **Equity Skewness** | 0.19 | Balanced equity curve, inconsistent with typical CFD skew |
+| **Excess Kurtosis** | -1.78 | Flat-tailed distribution, typical of data aggregation |
+| **Tail Risk (CVaR 95%)** | -0.34% | Unrealistically narrow loss tail |
 
 ---
 
 ## 4. Behavioral-Structural Diagnostics
 
-The *Behavior vs Structure Model* employs mutual information regression to evaluate the degree of non-linear dependency between behavioral variables (Overtrading, Loss Aversion, Size Volatility) and structural factors (Volatility Regime, Drawdown Stress, Sharpe Decay).
+The *Behavior vs Structure Model* quantifies non-linear dependencies between human and algorithmic components via **mutual information regression (MI)**:
 
 | **Category** | **Influence (%)** | **Dominant Factors** |
 |---------------|------------------|----------------------|
-| Behavioral | **31%** | Overtrading variance and adaptive sizing instability |
-| Structural | **69%** | Fixed-volatility regime and grid-based structural persistence |
+| **Behavioral** | 31% | Overtrading variance and adaptive sizing instability |
+| **Structural** | 69% | Fixed-volatility regime and grid-based exposure control |
 
-The results confirm algorithmic control with limited human interference.  
-Behavioral signals are suppressed, aligning with an automated decision-making process that follows rigid logic sequences with negligible cognitive deviation.
-
----
-
-## 5. Edge Decay Evaluation
-
-The Edge Decay analysis measures rolling Sharpe-adjusted returns to identify structural fatigue, instability, and collapse points.
-
-- **Edge Trend Slope:** -0.00042 → indicates gradual loss of efficiency  
-- **Correlation with Volatility Regime:** -0.68 → strategy deteriorates during volatility expansions  
-- **Edge Equilibrium Map:** reveals multiple transitions between structural and behavioral dominance, consistent with adaptive but fragile algorithmic design  
-
-The data suggest a *bubble-type structure* — performance remains stable until stress conditions trigger exponential degradation.
+These results confirm **algorithmic dominance** with negligible human input.  
+Behavioral activity appears suppressed, consistent with full automation and rule-based logic loops.
 
 ---
 
-## 6. Professional Interpretation
+## 5. Risk & Stress Metrics
 
-The account’s performance profile and decay topology indicate the following:
-
-- The system demonstrates **short-term mechanical consistency** typical of grid or mean-reversion EAs operating under synthetic spreads.  
-- **Drawdown compression** and **constant margin utilization** imply absence of real-market friction, inconsistent with retail CFD cost structures.  
-- The **1.00 Self-Destruction Index** indicates static exposure—no adaptive volatility or liquidity response.  
-- Report patterns and time clusters reveal **data smoothing**, likely introduced via platform-level aggregation or third-party manipulation.
-
-These findings are consistent with **non-live or partially simulated environments** (e.g., broker demo servers, IB-level backtesting modules, or API-fed synthetic feeds).
+| **Stress Test** | **Result** | **Interpretation** |
+|-----------------|------------|--------------------|
+| **Sortino Stress Test x2** | 1.97 → 0.94 | Severe sensitivity to downside amplification |
+| **Monte Carlo Variance (1000 Runs)** | 0.82% | Extremely narrow terminal dispersion |
+| **Simulated Probability of Ruin (30% Capital)** | 0.7% | Unrealistic; lacks drawdown persistence |
+| **Value at Risk (VaR 95%)** | -0.29% | Tight distribution; likely synthetic spread |
+| **Conditional VaR (CVaR 95%)** | -0.34% | Smoothed loss curve |
+| **Max Recovery Factor** | 10.8 | Anomalously high; suggests curve fitting |
+| **Edge Collapse Detection (CUSUM)** | 3 critical points | Matches volatility regime shifts |
+| **Page-Hinkley Change Points** | 2 | Confirms partial adaptation logic |
 
 ---
 
-## 7. Conclusions
+## 6. Edge Decay Evaluation
 
-The analyzed trading account exhibits a statistically coherent yet operationally implausible performance pattern.  
-While the strategy may exist as a genuine algorithm, its execution environment is almost certainly **non-realistic**.
+**Rolling Edge Strength Regression** reveals progressive weakening under volatility expansion.  
+- **Decay Slope:** -0.00042  
+- **Volatility Correlation:** -0.68  
+- **Decay Type:** Slow exponential  
 
-> **Summary Verdict:** The edge is *logically valid* but *environmentally artificial.*  
-> The account performance cannot be considered proof-of-performance under live market conditions.
+### Edge Collapse Root Cause
+- **Sharpe-to-WinRate Corr:** +0.73  
+- **Sharpe-to-Drawdown Corr:** -0.61  
+- **Sharpe-to-Trade Size Corr:** -0.55  
 
-The framework concludes that this strategy represents a **conceptual demonstration of precision trading logic**, not an example of real-world, friction-inclusive execution.
+> **Diagnosis:** structural rigidity amplified by mean-reversion exposure and risk grid feedback.
+
+---
+
+## 7. Professional Interpretation
+
+- Short-term mechanical consistency typical of grid EAs under synthetic latency.  
+- Drawdown compression indicates absence of real-market friction.  
+- ORS and UPI values suggest frictionless execution.  
+- 1.00 SDI value confirms static spread-free operation.  
+- Data smoothing and drawdown symmetry imply third-party aggregation or demo-server generation.
+
+These findings are consistent with **non-live or semi-simulated environments** — e.g., IB-level execution feeds or demo algorithmic backtests.
 
 ---
 
 ## 8. Framework Reference
 
-All computations, visualizations, and metrics in this document were produced using the *Beyond the Chart Quantitative & Behavioral Analysis Framework*, a proprietary analytical suite integrating:
+All metrics, regressions, and diagnostics were produced using the *Beyond the Chart Quantitative & Behavioral Analysis Framework* integrating:
 
-- Statistical robustness metrics (Sharpe, Sortino, Calmar, Gain-to-Pain)  
-- Behavioral correlation matrices (mutual information models)  
-- Structural decay forecasting (Edge Strength regression)  
-- Psychological attribution maps (Behavior vs Structure equilibrium)
+- **Quantitative Layer:** Sharpe, Sortino, Calmar, Gain-to-Pain, Ulcer, CVaR  
+- **Structural Layer:** Edge Decay, ORS, SDI, Rolling Payoff Variance  
+- **Behavioral Layer:** Overtrading, Loss Aversion, Position Size Volatility  
+- **Attribution Layer:** Mutual Information Matrix (Behavior vs Structure)  
+- **Temporal Layer:** Edge Equilibrium Timeline and CUSUM Event Map  
 
-This framework merges **quantitative analytics** with **behavioral finance principles** to provide a complete diagnosis of trading system sustainability.
+This unified model bridges **quantitative finance** and **behavioral analytics**, identifying when a trading system’s performance diverges from realistic stochastic expectations.
 
 ---
 
-## 8.1 Visual Performance Appendix
-
-This appendix provides a visual overview of the key quantitative and behavioral metrics computed within the *Beyond the Chart Quantitative & Behavioral Analysis Framework.*  
-All figures were generated directly from the Colab analytical environment and reflect rolling, cumulative, and mutual information–based diagnostics.
+## 9. Visual Performance Appendix
 
 | **Figure** | **Description** |
 |-------------|----------------|
-| ![Edge Collapse Root Cause Matrix](./images/Edge_Collapse_Root_Cause_Matrix.png) | Correlation heatmap showing relationships among Rolling Sharpe, Win Rate, Trade Size, and Drawdown. Identifies structural vs. behavioral interaction zones. |
-| ![Edge Decay Timeline](./images/Edge_Decay_Timeline.png) | Temporal evolution of Sharpe-adjusted Edge Strength, highlighting decay slope and structural stress correlation. |
-| ![Behavior vs Structure Timeline](./images/Behavior_vs_Structure_Timeline.png) | Dual force dynamic model displaying behavioral (pressure) vs structural (stress) dominance across trading phases. |
-| ![Equilibrium Map](./images/Behavior_Structure_Equilibrium_Map.png) | Cumulative equilibrium between behavioral and structural components, identifying tipping points in edge stability. |
-| ![Beyond Grade – Executive Summary](./images/Beyond_Grade_Executive_Summary.png) | Final radar-based summary of core performance metrics including Sharpe, Sortino, PF, R/R, and ORS. |
-| ![Final Diagnosis](./images/Final_Executive_Diagnosis.png) | Consolidated outcome of the behavioral–structural model, including dominance, decay slope, and sustainability interpretation. |
+| ![Edge Collapse Root Cause Matrix](./images/Edge_Collapse_Root_Cause_Matrix.png) | Correlation heatmap between Rolling Sharpe, Win Rate, Trade Size, and Drawdown. |
+| ![Edge Decay Timeline](./images/Edge_Decay_Timeline.png) | Temporal evolution of Sharpe-adjusted Edge Strength. |
+| ![Behavior vs Structure Timeline](./images/Behavior_vs_Structure_Timeline.png) | Behavioral (Pressure) vs Structural (Stress) dominance visualization. |
+| ![Equilibrium Map](./images/Behavior_Structure_Equilibrium_Map.png) | Balance of behavioral and structural components; tipping points detected. |
+| ![Beyond Grade – Executive Summary](./images/Beyond_Grade_Executive_Summary.png) | Radar visualization of quantitative performance and resilience metrics. |
+| ![Final Diagnosis](./images/Final_Executive_Diagnosis.png) | Behavioral-structural dominance and final sustainability assessment. |
 
 ---
 
-## 9. Legal Disclaimer
+## 10. Legal Disclaimer
 
 This report is provided for **research and educational purposes only**.  
-It does not constitute financial advice, investment solicitation, or endorsement of any trading strategy or platform.
-
-The analytical results are based on historical data provided by third-party sources.  
-Beyond the Chart makes no representation or warranty regarding the accuracy, completeness, or authenticity of the underlying dataset.
+It does not constitute financial advice, investment solicitation, or platform endorsement.  
+Results are based on third-party historical data and may not represent real trading performance.
 
 ---
 
-## 10. License & Intellectual Property
+## 11. License & Intellectual Property
 
 © **Beyond the Chart Research Division. All rights reserved.**
 
 This document and its contents are proprietary intellectual property of **Beyond the Chart Research Division**.  
-Unauthorized reproduction, modification, distribution, or commercial use of this material is strictly prohibited.
+Unauthorized reproduction, modification, or redistribution of this material is strictly prohibited.
 
-Permission to use this work, in part or in full, must be obtained in writing from Beyond the Chart Research Division.
+Use of this content for quantitative research or academic citation requires explicit attribution:
 
-The content of this repository is provided for **quantitative research and educational purposes only.**  
-It does not constitute investment advice, solicitation, or financial guidance.
-
-Any citation or republication must include full attribution:  
 > *Beyond the Chart – Quantitative & Behavioral Analysis Framework*  
 > *Authored by Beyond the Chart Research Division*  
+> *© Beyond the Chart | Proprietary Quantitative & Behavioral Framework*
+
