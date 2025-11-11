@@ -172,13 +172,13 @@ The *Edge Collapse Root Cause Analysis* isolates the leading factors that accele
 
 ## **11. Comprehensive Behavioral Analysis**
 
-While this account is fully algorithmic, the Behavioral Analysis module is included to test any residual bias or overtrading pattern.  
-Results confirm an absence of human-driven bias but reveal deterministic behavior tied to market cycles.
+Although this account operates entirely through automation, the Behavioral Analysis module was executed to verify the presence of any deterministic biases or size-related distortions.  
+The results confirm **no human-driven influence**, but they reveal **systematic position scaling behavior**, consistent with algorithmic grid or averaging logic.
 
 **Figures:**  
-![Trade Burstiness](images/trades_per_day_overtrading_burstiness_proxy.png)  
 ![Size Bias Analysis](images/position_sizing_bias_ratio.png)  
 ![Win Loss Streaks](images/streaks_consecutive_wins_losses.png)
+
 
 ---
 
