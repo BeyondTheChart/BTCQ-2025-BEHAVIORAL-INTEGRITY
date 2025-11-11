@@ -27,11 +27,11 @@ This section evaluates the system’s long-term performance stability and reward
 | Calmar Ratio | **23.0** | Inconsistent with natural drawdown distribution |
 | Gain-to-Pain | **3.88** | Suggests filtered or synthetic return series |
 
-**Figures:**
-![Rolling Sharpe Ratio](images/rolling_sharpe_ratio.png)
-![Rolling Sortino Ratio](images/rolling_sortino_ratio.png)
-![CAGR & Calmar Ratio](images/cagr_calmar_ratio.png)
-![Gain to Pain Distribution](images/gain_to_pain.png)
+**Figures:**  
+![Rolling Sharpe Ratio](images/rolling_sharpe_92_trades.png)  
+![Rolling Sortino Ratio](images/rolling_sortino_92_trades.png)  
+![CAGR & Calmar Ratio](images/ulcer_index_upi_chart.png)  
+![Gain to Pain Distribution](images/omega_ratio_tau_0.png)
 
 ---
 
@@ -46,11 +46,11 @@ Tail risk metrics expose non-normality and artificial compression of trade-level
 | VaR (95%) | **−€37.22** | Minimal tail losses, unrealistic in high-frequency trading |
 | CVaR (95%) | **−€55.81** | Confirms volatility underestimation |
 
-**Figures:**
-![Trade Distribution](images/trade_distribution.png)
-![QQ Plot – Trade Returns](images/qq_plot_returns.png)
-![Rolling Expectancy](images/rolling_expectancy.png)
-![Rolling Volatility](images/rolling_volatility.png)
+**Figures:**  
+![Trade Distribution](images/trade_distribution_net_pnl.png)  
+![QQ Plot – Trade Returns](images/conditional_value_at_risk_cvar_95.png)  
+![Rolling Expectancy](images/rolling_expectancy_volatility_window_100.png)  
+![Rolling Volatility](images/payoff_stability_rolling_std_50.png)
 
 ---
 
@@ -65,11 +65,11 @@ Equity progression reveals an exceptionally linear equity curve with minimal dra
 | Consistency Index | **0.91** | Indicates mechanical uniformity |
 | Behavioral Decay Correlation | **−0.65** | Suggests degradation under volatility stress |
 
-**Figures:**
-![Equity Curve](images/equity_curve.png)
-![Drawdown Map](images/drawdown_map.png)
-![Behavioral Decay](images/behavioral_decay.png)
-![KDE Distribution](images/kde_distribution.png)
+**Figures:**  
+![Equity Curve](images/equity_curve_beyond_the_chart.png)  
+![Drawdown Map](images/drawdown_percent_per_trade.png)  
+![Behavioral Decay](images/anti_false_positives_flags_score.png)  
+![KDE Distribution](images/kde_distribution_trade_pnl_density.png)
 
 ---
 
@@ -83,8 +83,8 @@ This matrix reveals how internal performance metrics interact, exposing whether 
 | Sharpe ↔ Drawdown | −0.64 | Efficiency loss under stress |
 | Sharpe ↔ Trade Size | −0.52 | Suggests reactive size increase during drawdowns |
 
-**Figure:**
-![Root Cause Matrix](images/root_cause_matrix.png)
+**Figure:**  
+![Root Cause Matrix](images/edge_collapse_root_cause_matrix.png)
 
 ---
 
@@ -98,9 +98,9 @@ The *Edge Decay Timeline* measures the rate at which the algorithm’s efficienc
 | Correlation (r) | **−0.68** | Negative link between edge and volatility |
 | Decay Regime | **Progressive** | Edge weakens during volatile market conditions |
 
-**Figures:**
-![Edge Strength Curve](images/edge_strength_curve.png)
-![Edge Decay Trendline](images/edge_decay_timeline.png)
+**Figures:**  
+![Edge Strength Curve](images/early_warning_rolling_payoff_ratio_window_30.png)  
+![Edge Decay Trendline](images/edge_decay_timeline_smoothed.png)
 
 ---
 
@@ -114,10 +114,10 @@ Monte Carlo reshuffle simulations were performed to measure the algorithm’s st
 | 5–95% Interval | **[€25,260 – €33,980]** | Narrow band suggests homogenized returns |
 | Simulated Probability of Ruin | **<1%** | Unrealistically low — artificial data variance |
 
-**Figures:**
-![Monte Carlo Fan Chart](images/monte_carlo_fan_chart.png)
-![Final Equity Distribution](images/final_equity_distribution.png)
-![Survival Probability Curve](images/survival_probability_curve.png)
+**Figures:**  
+![Monte Carlo Fan Chart](images/monte_carlo_fan_chart_1000_bootstrap_paths.png)  
+![Final Equity Distribution](images/final_equity_distribution_empirical_monte_carlo.png)  
+![Survival Probability Curve](images/survival_probability_vs_dd_30_empirical.png)
 
 ---
 
@@ -131,9 +131,9 @@ This section models theoretical and simulated probabilities of account failure u
 | Simulated Ruin Probability | **1.2%** | Indicates filtered loss distribution |
 | Cumulative Survival Probability | **>98%** | Consistent with demo or non-frictional environment |
 
-**Figures:**
-![Risk of Ruin](images/risk_of_ruin.png)
-![Cumulative Risk Curve](images/cumulative_risk_curve.png)
+**Figures:**  
+![Risk of Ruin](images/cumulative_probability_max_drawdown_30_empirical.png)  
+![Cumulative Risk Curve](images/survival_probability_vs_dd_30_empirical.png)
 
 ---
 
@@ -147,10 +147,11 @@ The *Beyond Risk Metrics* module compares real-equity drawdown against a broker-
 | Broker-Limited Max Drawdown | **2.1%** | Identical — synthetic feed |
 | Self-Destruction Index | **1.00** | No market friction detected |
 
-**Figures:**
-![Equity Comparison – Real vs Broker](images/equity_comparison_real_broker.png)
-![Drawdown Comparison](images/drawdown_comparison.png)
-![Hidden Exposure Summary](images/hidden_exposure_summary.png)
+**Figures:**  
+![Equity Comparison – Real vs Broker](images/equity_real_vs_broker_limited.png)  
+![Drawdown Comparison](images/drawdown_comparison_real_vs_broker_simulation.png)  
+![Hidden Exposure Summary](images/hidden_exposure_table.png)  
+![Self-Destruction Index](images/self_destruction_index.png)
 
 ---
 
@@ -164,8 +165,8 @@ The *Edge Collapse Root Cause Analysis* isolates the leading factors that accele
 | Behavioral Correlation | **+0.31** | Minor impact — EA suppresses trader bias |
 | Size-Exposure Interaction | **−0.52** | Aggressive scaling in stress phases |
 
-**Figure:**
-![Edge Collapse Matrix](images/edge_collapse_matrix.png)
+**Figure:**  
+![Edge Collapse Matrix](images/edge_collapse_root_cause_matrix.png)
 
 ---
 
@@ -174,10 +175,10 @@ The *Edge Collapse Root Cause Analysis* isolates the leading factors that accele
 While this account is fully algorithmic, the Behavioral Analysis module is included to test any residual bias or overtrading pattern.  
 Results confirm an absence of human-driven bias but reveal deterministic behavior tied to market cycles.
 
-**Figures:**
-![Trade Burstiness](images/trade_burstiness.png)
-![Size Bias Analysis](images/size_bias_analysis.png)
-![Win Loss Streaks](images/win_loss_streaks.png)
+**Figures:**  
+![Trade Burstiness](images/trades_per_day_overtrading_burstiness_proxy.png)  
+![Size Bias Analysis](images/position_sizing_bias_ratio.png)  
+![Win Loss Streaks](images/streaks_consecutive_wins_losses.png)
 
 ---
 
@@ -214,5 +215,3 @@ This repository and analytical framework are released under the **CC BY-NC-ND 4.
 > © Beyond the Chart Research Division  
 > Quantitative & Behavioral Framework  
 > All rights reserved — for institutional and research purposes only.
-
----
